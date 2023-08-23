@@ -1,0 +1,67 @@
+.main{
+    width: 80%;
+    margin:auto;
+}
+
+
+.video-playlist {
+    display: flex;
+}
+
+.video-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.video-thumbnail {
+    cursor: pointer;
+}
+
+.video-player {
+    flex: 2;
+}
+
+
+
+
+/* Style Videos */
+
+.video-container {
+    display: flex;
+}
+
+.video {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.thumbnails {
+    flex: 0 0 200px;
+}
+
+.thumbnail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.thumbnail-item img {
+    width: 250px;
+    margin-right: 10px;
+    /* margin-left: 10px; */
+}
+
+#current-video {
+    width: 100%;
+   
+    
+}
+
+.video-section {
+  background-color: #ffffff;
+  padding: 20px;
+}
