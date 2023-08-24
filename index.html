@@ -32,6 +32,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
       <link href="css/videos.css" rel="stylesheet">
       <script src="js/videos.js"></script>
+
+      <!-- En el encabezado del documento -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
    </head>
    <!-- body -->
    <body class="main-layout">
@@ -222,33 +229,43 @@
 
             <!--version 2 - Videos -->
             <div id="nosotros" class="video-section">
-               <div class="video-container">
-                 <div class="thumbnails">
-                   <div class="thumbnail-item" onclick="changeVideo('videos/video_1.mp4', this);">
-                     <img src="images/video01.jpg">
-                     <p>Descripcion de Video 1</p>
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-3">
+                     <div class="thumbnails">
+                       <div class="thumbnail-item" onclick="changeVideo('videos/video_1.mp4', this);">
+                         <img src="images/video01.jpg">
+                         
+                       </div>
+                       <p>Descripcion de Video 1</p>
+             
+                       <div class="thumbnail-item" onclick="changeVideo('videos/video_2.mp4', this);">
+                         <img src="images/video02.jpg">
+                         
+                       </div>
+                       <p>Descripcion de Video 2</p>
+             
+                       <div class="thumbnail-item" onclick="changeVideo('videos/video_3.mp4', this);">
+                         <img src="images/video03.jpg">
+                         
+                       </div>
+                       <p>Descripcion de Video 3</p>
+                     </div>
                    </div>
              
-                   <div class="thumbnail-item" onclick="changeVideo('videos/video_2.mp4', this);">
-                     <img src="images/video02.jpg">
-                     <p>Descripcion de Video 2</p>
-                   </div>
-             
-                   <div class="thumbnail-item" onclick="changeVideo('videos/video_3.mp4', this);">
-                     <img src="images/video03.jpg">
-                     <p>Descripcion de Video 3</p>
-                   </div>
-                 </div>
-             
-                 <div class="video">
-                   <div class="video-wrapper">
-                     <video id="current-video" autoplay controls muted>
-                       <source src="videos/video_1.mp4" type="video/mp4">
-                     </video>
+                   <div class="col-md-9">
+                     <div class="video">
+                       <div class="embed-responsive embed-responsive-16by9">
+                         <video id="current-video" class="embed-responsive-item" autoplay controls muted>
+                           <source src="videos/video_1.mp4" type="video/mp4">
+                         </video>
+                       </div>
+                     </div>
                    </div>
                  </div>
                </div>
              </div>
+             
              
 
             <script>
