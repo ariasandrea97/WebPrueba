@@ -190,7 +190,7 @@
 
          <!--  contenido de videos -->
 
-         <div id="nosotros" class="video-section">
+         <!-- <div id="nosotros" class="video-section">
            
             <div class="video-container">
                <div class="thumbnails">
@@ -218,7 +218,38 @@
                         <source src="videos/video_1.mp4" type="video/mp4">
                   </video>
                </div>
-            </div>
+            </div> -->
+
+            <!--version 2 - Videos -->
+            <div id="nosotros" class="video-section">
+               <div class="video-container">
+                 <div class="thumbnails">
+                   <div class="thumbnail-item" onclick="changeVideo('videos/video_1.mp4', this);">
+                     <img src="images/video01.jpg">
+                     <p>Descripcion de Video 1</p>
+                   </div>
+             
+                   <div class="thumbnail-item" onclick="changeVideo('videos/video_2.mp4', this);">
+                     <img src="images/video02.jpg">
+                     <p>Descripcion de Video 2</p>
+                   </div>
+             
+                   <div class="thumbnail-item" onclick="changeVideo('videos/video_3.mp4', this);">
+                     <img src="images/video03.jpg">
+                     <p>Descripcion de Video 3</p>
+                   </div>
+                 </div>
+             
+                 <div class="video">
+                   <div class="video-wrapper">
+                     <video id="current-video" autoplay controls muted>
+                       <source src="videos/video_1.mp4" type="video/mp4">
+                     </video>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
 
             <script>
                var videoIndex = 0;
